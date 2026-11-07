@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  victoriametrics:
+    image: victoriametrics/victoria-metrics:v1.156.0-rc0-scratch@sha256:8147f30d412583953d66e4ab02cc31977301bec87d3122df192fcf8092bc0bc1
+    container_name: victoriametrics
+    platform: linux/amd64
+    user: "1000:1000"
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    command:
+      - -storageDataPath=/storage
+      - -httpAuth.username=metrics
+      - -httpAuth.password=file:///config/http-password
+      - -memory.allowedBytes=128MiB
+    ports:
+      - "18428:8428"
+    volumes:
+      - ./data:/storage
+      - ./config:/config:ro
+x-app-meta:
+  web:
+    port: 18428
+    protocol: http

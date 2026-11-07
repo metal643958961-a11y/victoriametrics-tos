@@ -1,0 +1,182 @@
+[zh-cn]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "存储时间序列，在 VMUI 查询并绘制指标。"
+important = "在应用 config 目录写入非空强口令文件 http-password，用户名为 metrics。通过受信任网络访问。"
+release_note = "首个 x86_64 Beta 包，基于上游 v1.156.0-rc0。"
+
+[zh-hk]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[en-us]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[ko-kr]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[ja-jp]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[de-de]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[fr-fr]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[it-it]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[es-es]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[hu-hu]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[pl-pl]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[tr-tr]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[ru-ru]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[pt-pt]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[cs-cz]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[da-dk]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[nl-nl]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[nb-no]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[sv-se]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[el-gr]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[ro-ro]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[th-th]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[vi-vn]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[id-id]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[ar-sa]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
+[he-il]
+name = "VictoriaMetrics"
+auth = "316z666"
+descript = "Store time series and explore metrics in VMUI."
+important = "Create a strong non-empty http-password file in the app config directory. Sign in as metrics on a trusted network."
+release_note = "Initial x86_64 beta based on upstream v1.156.0-rc0."
+
