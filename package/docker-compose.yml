@@ -1,24 +1,59 @@
-version: "3.8"
+---
+version: '3.8'
 services:
+  initialize:
+    image: library/busybox:1.37.0-musl@sha256:5624bb6777cf469b1fb50ae3f981b15d2715ee2fffaf20b9998cfb7843726835
+    platform: linux/amd64
+    user: 1000:1000
+    read_only: true
+    cap_drop:
+    - ALL
+    security_opt:
+    - no-new-privileges:true
+    restart: 'no'
+    entrypoint:
+    - "/bin/sh"
+    - "-ec"
+    command:
+    - |
+      set -eu
+      umask 077
+      mkdir -p /tmp/private/data
+      if [ ! -s /tmp/private/password ]; then
+        temp=/tmp/private/password.$$$$
+        od -An -N32 -tx1 /dev/urandom | tr -d ' \n' > "$$temp"
+        ln "$$temp" /tmp/private/password || test -s /tmp/private/password
+        rm -f "$$temp"
+      fi
+      password=$$(cat /tmp/private/password)
+      [ "$${#password}" = 64 ]
+    volumes:
+    - "/data:/tmp"
+    mem_limit: 32m
+    pids_limit: 32
   victoriametrics:
-    image: victoriametrics/victoria-metrics:v1.156.0-rc0-scratch@sha256:8147f30d412583953d66e4ab02cc31977301bec87d3122df192fcf8092bc0bc1
+    image: victoriametrics/victoria-metrics:v1.156.0-scratch@sha256:8147f30d412583953d66e4ab02cc31977301bec87d3122df192fcf8092bc0bc1
     container_name: victoriametrics
     platform: linux/amd64
-    user: "1000:1000"
+    user: 1000:1000
     restart: unless-stopped
     read_only: true
-    cap_drop: [ALL]
-    security_opt: ["no-new-privileges:true"]
+    cap_drop:
+    - ALL
+    security_opt:
+    - no-new-privileges:true
     command:
-      - -storageDataPath=/storage
-      - -httpAuth.username=metrics
-      - -httpAuth.password=file:///config/http-password
-      - -memory.allowedBytes=128MiB
+    - "-storageDataPath=/state/private/data"
+    - "-httpAuth.username=metrics"
+    - "-httpAuth.password=file:///state/private/password"
+    - "-memory.allowedBytes=128MiB"
     ports:
-      - "18428:8428"
+    - 18428:8428
     volumes:
-      - ./data:/storage
-      - ./config:/config:ro
+    - "/data:/state"
+    depends_on:
+      initialize:
+        condition: service_completed_successfully
 x-app-meta:
   web:
     port: 18428

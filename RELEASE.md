@@ -1,7 +1,12 @@
-# VictoriaMetrics for TOS 7 · v1.156.0.1 Beta
+# victoriametrics v1.156.0.2 — 整改版本
 
-适用于 x86_64 TNAS，依赖 DockerEngine。单机服务提供时间序列写入、MetricsQL 查询和 VMUI，端口 18428。固定上游 OSS 镜像 v1.156.0-rc0-scratch。设置实例口令后登录，具体目录、权限和 HTTPS 配置见 README.md。
+修复分类、声明持久绑定目录、首次启动随机凭据及非root权限；去除Beta标记。使用固定稳定版镜像。补齐隐私政策、许可和复核证据。
 
-拟用标签 v1.156.0.1。附件为 victoriametrics.tar.gz 及 SHA256SUMS。安装包 SHA256 为 2d3fa59e13b9edefca19379c786b690887326060d80728d04ba2a3e44672e6a4。公开后通过适配仓库 Issues 接收反馈。
+平台：TOS7 / x86_64 / Docker。附件：`victoriametrics.tar.gz`、`SHA256SUMS`。
+SHA256：`7ec8e50bccb5bcf0dab452f3a55019d2479ceb4b0663a959d2dcbaeb7e15b50c`。
 
-已在官方 TOS 7.0.1422 x86_64 体验机上通过固定镜像启动、VMUI HTTP、指标读写以及重启和重建持久化验证。该体验机的镜像代理首次拉取返回 502，验证使用导入的同摘要镜像。Beta 在 TOS 仅对测试用户展示。
+验收范围：官方包静态检查、隔离Linux Docker本地回归和固定镜像扫描；真实TOS应用中心安装/桌面/升级/卸载未验证。Docker冷启动使用缓存镜像，不证明TOS官方代理冷拉取故障解除。
+
+旧版数据在绑定目录，新版采用绑定目录，不能直接假设原数据自动出现。先停服、备份，再按README迁移。TOS Docker当前不支持原地升级；使用官方支持的卸载保留数据/重装路径，真实TOS上仍需验收。按照平台卸载选项选择保留或删除数据；本地已模拟验证，真实TOS待验。
+
+公开发布不等于平台接收或审核通过。旧审核尚未结束时不撤回、不重复提交。
